@@ -1,0 +1,64 @@
+@import url("variables.css");
+@import url("reset.css");
+
+@import url("header.css");
+@import url("hero.css");
+@import url("about.css");
+@import url("about-page.css");
+@import url("categories.css");
+@import url("featured-menu.css");
+@import url("menu.css");
+@import url("chef.css");
+@import url("gallery.css");
+@import url("contact.css");
+@import url("reservation.css");
+@import url("testimonials.css");
+@import url("footer.css");
+
+
+@import url("animations.css");
+@import url("responsive.css");
+
+/* ==========================
+   GOOGLE FONTS
+========================== */
+
+.btn{
+
+    display:inline-flex;
+    align-items:center;
+    gap:10px;
+    padding:15px 32px;
+    border-radius:50px;
+    transition:var(--transition);
+    cursor:pointer;
+    font-weight:600;
+}
+
+.btn-primary{
+    background:var(--primary);
+    color:white;
+}
+
+.btn-primary:hover{
+    background:var(--primary-dark);
+    transform:translateY(-4px);
+}
+
+.btn-outline{
+    border:2px solid white;
+    color:white;
+}
+
+.btn-outline:hover{
+    background:white;
+    color:black;
+}
+
+
+
+
+
+
+
+

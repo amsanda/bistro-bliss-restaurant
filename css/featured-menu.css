@@ -1,0 +1,98 @@
+/*=====================================
+        FEATURED MENU
+=====================================*/
+
+.featured-menu{
+    background:white;
+}
+
+.menu-tabs{
+    display:flex;
+    justify-content:center;
+    gap:15px;
+    margin-bottom:60px;
+    flex-wrap:wrap;
+}
+
+.tab-btn{
+    padding:14px 28px;
+    border:none;
+    border-radius:50px;
+    background:#eee;
+    cursor:pointer;
+    font-weight:600;
+    transition:.3s;
+}
+
+.tab-btn.active{
+    background:var(--primary);
+    color:white;
+}
+
+.tab-btn:hover{
+    background:var(--primary);
+    color:white;
+}
+
+.menu-grid{
+    display:grid;
+    grid-template-columns:repeat(4,1fr);
+    gap:30px;
+}
+
+.menu-card{
+    position:relative;
+    background:white;
+    border-radius:20px;
+    overflow:hidden;
+    box-shadow:0 15px 35px rgba(0,0,0,.08);
+    transition:.35s;
+}
+
+.menu-card:hover{
+    transform:translateY(-12px);
+}
+
+.menu-card img{
+    height:220px;
+    object-fit:cover;
+}
+
+.menu-card h3{
+    margin:18px 20px 10px;
+}
+
+.menu-card p{
+    margin:0 20px;
+    color:#666;
+}
+
+.menu-card h4{
+    margin:20px;
+    color:var(--primary);
+    font-size:24px;
+}
+
+.badge{
+    position:absolute;
+    top:20px;
+    left:20px;
+    background:var(--primary);
+    color:white;
+    padding:6px 16px;
+    border-radius:30px;
+    font-size:13px;
+}
+
+.badge.chef{
+    background:#A45A3D;
+}
+
+.badge.veg{
+    background:#66785F;
+}
+
+.menu-btn{
+    margin-top:60px;
+    text-align:center;
+}

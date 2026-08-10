@@ -1,0 +1,140 @@
+/*======================================
+        CHEF'S SPECIAL
+======================================*/
+
+.chef{
+
+    padding:120px 0;
+
+    background:#202020;
+
+    position:relative;
+
+    overflow:hidden;
+
+}
+
+.chef::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:350px;
+
+    height:350px;
+
+    background:rgba(200,155,60,.08);
+
+    border-radius:50%;
+
+    left:-100px;
+
+    top:-100px;
+
+}
+
+.chef-wrapper{
+
+    display:grid;
+
+    grid-template-columns:1fr 1fr;
+
+    align-items:center;
+
+    gap:80px;
+
+}
+
+.chef-image{
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:25px;
+
+}
+
+.chef-image img{
+
+    transition:1.2s;
+
+}
+
+.chef-image:hover img{
+
+    transform:scale(1.08);
+
+}
+
+.special-badge{
+
+    position:absolute;
+
+    top:25px;
+
+    left:25px;
+
+    background:linear-gradient(
+    135deg,
+    #E5C46A,
+    #C89B3C);
+
+    color:white;
+
+    padding:12px 25px;
+
+    border-radius:40px;
+
+    font-weight:600;
+
+    z-index:5;
+
+}
+
+.chef-content{
+
+    color:white;
+
+}
+
+.chef-content h2{
+
+    font-size:64px;
+
+    margin:20px 0;
+
+}
+
+.chef-content p{
+
+    color:#cccccc;
+
+    line-height:2;
+
+    margin-bottom:30px;
+
+}
+
+.rating{
+
+    color:#FFD54A;
+
+    font-size:24px;
+
+    margin-bottom:25px;
+
+}
+
+.price{
+
+    font-size:46px;
+
+    color:var(--primary);
+
+    margin-bottom:40px;
+
+    font-family:'Playfair Display',serif;
+
+}

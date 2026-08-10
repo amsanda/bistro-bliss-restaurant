@@ -1,0 +1,602 @@
+/*======================================
+            GALLERY
+======================================*/
+
+.gallery{
+
+    padding:120px 0;
+
+    background:#F9F6F1;
+
+}
+
+.gallery-header{
+
+    text-align:center;
+
+    margin-bottom:60px;
+
+}
+
+.gallery-header h2{
+
+    font-size:52px;
+
+    margin:15px 0;
+
+}
+
+.gallery-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    grid-auto-rows:250px;
+
+    gap:20px;
+
+}
+
+.gallery-item{
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:20px;
+
+    cursor:pointer;
+
+}
+
+.gallery-item img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:.6s;
+
+}
+
+.gallery-item:hover img{
+
+    transform:scale(1.12);
+
+}
+
+.gallery-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    background:rgba(0,0,0,.55);
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    opacity:0;
+
+    transition:.4s;
+
+}
+
+.gallery-item:hover .gallery-overlay{
+
+    opacity:1;
+
+}
+
+.gallery-overlay i{
+
+    color:white;
+
+    font-size:38px;
+
+}
+
+.gallery-item.large{
+
+    grid-column:span 2;
+
+    grid-row:span 2;
+
+}
+
+.gallery-btn{
+
+    text-align:center;
+
+    margin-top:60px;
+
+}
+
+/*======================================*
+        DEDICATED GALLERY PAGE
+======================================*/
+
+/*======================================*
+        GALLERY HERO
+======================================*/
+
+.gallery-hero{
+
+    position:relative;
+
+    min-height:520px;
+
+    margin-top:95px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    text-align:center;
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,.68),
+            rgba(0,0,0,.68)
+        ),
+        url("../images/hero.jpg");
+
+    background-position:center;
+
+    background-size:cover;
+
+    background-repeat:no-repeat;
+}
+
+.gallery-hero-content{
+
+    position:relative;
+
+    z-index:2;
+
+    max-width:800px;
+
+    margin:auto;
+
+    color:white;
+
+    padding:80px 0;
+}
+
+.gallery-hero-content span{
+
+    display:block;
+
+    color:var(--primary);
+
+    font-size:15px;
+
+    font-weight:600;
+
+    letter-spacing:4px;
+
+    text-transform:uppercase;
+
+    margin-bottom:20px;
+}
+
+.gallery-hero-content h1{
+
+    color:white;
+
+    font-size:clamp(3rem,6vw,5.5rem);
+
+    line-height:1.08;
+
+    margin-bottom:25px;
+}
+
+.gallery-hero-content p{
+
+    max-width:650px;
+
+    margin:auto;
+
+    color:#eeeeee;
+
+    font-size:18px;
+
+    line-height:1.8;
+}
+
+
+/*======================================*
+        GALLERY FILTER
+======================================*/
+
+.gallery-filter{
+
+    padding:45px 0;
+
+    background:white;
+
+    border-bottom:1px solid #eeeeee;
+}
+
+.gallery-filter-buttons{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    flex-wrap:wrap;
+
+    gap:15px;
+}
+
+.gallery-filter-btn{
+
+    border:none;
+
+    background:#f4f1eb;
+
+    color:#222;
+
+    padding:13px 28px;
+
+    border-radius:50px;
+
+    font-family:'Poppins',sans-serif;
+
+    font-size:15px;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.35s;
+}
+
+.gallery-filter-btn:hover{
+
+    background:var(--primary);
+
+    color:white;
+
+    transform:translateY(-3px);
+}
+
+.gallery-filter-btn.active{
+
+    background:var(--primary);
+
+    color:white;
+
+    box-shadow:0 10px 25px rgba(200,155,60,.25);
+}
+
+
+/*======================================*
+        GALLERY PAGE CONTENT
+======================================*/
+
+.gallery-page{
+
+    padding:100px 0 120px;
+
+    background:#F9F6F1;
+}
+
+.gallery-page-header{
+
+    text-align:center;
+
+    margin-bottom:60px;
+}
+
+.gallery-page-header span{
+
+    color:var(--primary);
+
+    font-weight:600;
+
+    letter-spacing:4px;
+
+    text-transform:uppercase;
+}
+
+.gallery-page-header h2{
+
+    font-size:52px;
+
+    margin:15px 0;
+
+    line-height:1.15;
+}
+
+.gallery-page-header p{
+
+    max-width:650px;
+
+    margin:auto;
+
+    color:#777;
+
+    line-height:1.8;
+}
+
+
+/*======================================*
+        GALLERY PAGE GRID
+======================================*/
+
+.gallery-page-grid{
+
+    display:grid;
+
+    grid-template-columns:repeat(4,1fr);
+
+    grid-auto-rows:280px;
+
+    gap:20px;
+}
+
+.gallery-page-item{
+
+    position:relative;
+
+    overflow:hidden;
+
+    border-radius:20px;
+
+    cursor:pointer;
+
+    background:#ddd;
+
+    box-shadow:0 12px 30px rgba(0,0,0,.08);
+
+    transition:.4s;
+}
+
+.gallery-page-item img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+    display:block;
+
+    transition:.6s ease;
+}
+
+.gallery-page-item:hover img{
+
+    transform:scale(1.1);
+}
+
+.gallery-page-item:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:0 20px 40px rgba(0,0,0,.14);
+}
+
+
+/*======================================*
+        IMAGE OVERLAY
+======================================*/
+
+.gallery-page-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    flex-direction:column;
+
+    justify-content:flex-end;
+
+    padding:30px;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(0,0,0,.75),
+            rgba(0,0,0,0)
+        );
+
+    opacity:0;
+
+    transition:.4s;
+}
+
+.gallery-page-item:hover .gallery-page-overlay{
+
+    opacity:1;
+}
+
+.gallery-page-overlay h3{
+
+    color:white;
+
+    font-size:24px;
+
+    margin-bottom:5px;
+}
+
+.gallery-page-overlay span{
+
+    color:#ddd;
+
+    font-size:14px;
+}
+
+
+/*======================================*
+        LARGE GALLERY ITEMS
+======================================*/
+
+.gallery-page-item.large{
+
+    grid-column:span 2;
+
+    grid-row:span 2;
+}
+
+
+/*======================================*
+        VIEW IMAGE ICON
+======================================*/
+
+.gallery-view-icon{
+
+    position:absolute;
+
+    top:25px;
+
+    right:25px;
+
+    width:48px;
+
+    height:48px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.18);
+
+    backdrop-filter:blur(10px);
+
+    color:white;
+
+    font-size:18px;
+
+    transform:scale(.7);
+
+    opacity:0;
+
+    transition:.4s;
+}
+
+.gallery-page-item:hover .gallery-view-icon{
+
+    transform:scale(1);
+
+    opacity:1;
+}
+
+
+/*======================================*
+        INSTAGRAM SECTION
+======================================*/
+
+.instagram{
+
+    padding:110px 0;
+
+    text-align:center;
+
+    background:#1f1f1f;
+
+    color:white;
+}
+
+.instagram span{
+
+    color:var(--primary);
+
+    font-size:14px;
+
+    font-weight:600;
+
+    letter-spacing:4px;
+}
+
+.instagram h2{
+
+    color:white;
+
+    font-size:45px;
+
+    margin:18px 0;
+}
+
+.instagram p{
+
+    color:#bbb;
+
+    margin-bottom:30px;
+}
+
+/*======================================*
+        GALLERY FILTER SECTION
+======================================*/
+
+.gallery-filter {
+    padding: 45px 0;
+    background: #ffffff;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.gallery-filter-buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.gallery-filter-btn {
+    border: 1px solid #e5e5e5;
+    outline: none;
+
+    background: #f8f5ef;
+    color: #222222;
+
+    padding: 13px 28px;
+
+    border-radius: 50px;
+
+    font-family: 'Poppins', sans-serif;
+    font-size: 15px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: all .35s ease;
+
+    box-shadow: 0 5px 15px rgba(0, 0, 0, .05);
+}
+
+.gallery-filter-btn:hover {
+    background: var(--primary);
+    color: #ffffff;
+    border-color: var(--primary);
+
+    transform: translateY(-3px);
+
+    box-shadow: 0 10px 25px rgba(200, 155, 60, .20);
+}
+
+.gallery-filter-btn.active {
+    background: var(--primary);
+    color: #ffffff;
+
+    border-color: var(--primary);
+
+    box-shadow: 0 10px 25px rgba(200, 155, 60, .25);
+}

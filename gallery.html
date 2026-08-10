@@ -1,0 +1,568 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Gallery | Bistro Bliss Restaurant</title>
+
+    <meta name="description"
+        content="Explore the beautiful ambience and delicious dishes at Bistro Bliss Restaurant.">
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+        href="https://fonts.gstatic.com"
+        crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/gallery.css">
+    <link rel="stylesheet" href="css/responsive.css">
+
+</head>
+
+<body>
+    <!--================ NAVIGATION ================-->
+
+        <header class="header" id="header">
+            <div class="container nav-container">
+                <a href="index.html" class="logo">
+                    <img src="images/logo.png" alt="Bistro Bliss Logo">
+                    <div class="logo-text">
+                        <h2>Bistro Bliss</h2>
+                        <span>Restaurant</span>
+                    </div>
+                </a>
+
+                <nav class="navbar">
+
+                    <ul class="nav-links">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="menu.html">Menu</a></li>
+                        <li><a href="gallery.html">Gallery</a></li>
+                        <li><a href="contact.html">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <a href="reservation.html" class="btn btn-primary reserve-btn">
+                    Reserve a Table
+                </a>
+
+                <div class="menu-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+
+            </div>
+
+        </header>
+
+        <section class="gallery-hero">
+
+            <div class="overlay"></div>
+
+            <div class="container">
+
+                <div class="gallery-hero-content">
+
+                    <span>OUR GALLERY</span>
+
+                    <h1>
+                        Discover the Beauty
+                        <br>
+                        of Bistro Bliss
+                    </h1>
+
+                    <p>
+
+                        From delicious meals to elegant dining spaces,
+                        every moment at Bistro Bliss is worth remembering.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <!--==========================================
+            GALLERY FILTER
+        ===========================================-->
+
+        <section class="gallery-filter">
+
+            <div class="container">
+
+                <div class="gallery-filter-buttons">
+
+                    <button
+                        class="gallery-filter-btn active"
+                        data-filter="all">
+                        All
+                    </button>
+
+                    <button
+                        class="gallery-filter-btn"
+                        data-filter="food">
+                        Food
+                    </button>
+
+                    <button
+                        class="gallery-filter-btn"
+                        data-filter="restaurant">
+                        Restaurant
+                    </button>
+
+                    <button
+                        class="gallery-filter-btn"
+                        data-filter="drinks">
+                        Drinks
+                    </button>
+
+                    <button
+                        class="gallery-filter-btn"
+                        data-filter="kitchen">
+                        Kitchen
+                    </button>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="gallery-page">
+
+            <div class="container">
+
+                <div class="gallery-page-header">
+
+                    <span>OUR COLLECTION</span>
+
+                    <h2>
+                        A Taste of Bistro Bliss
+                    </h2>
+
+                    <p>
+                        Take a glimpse into our food, atmosphere,
+                        drinks and the people behind every unforgettable meal.
+                    </p>
+
+                </div>
+
+
+                <div class="gallery-page-grid">
+
+                    <div class="gallery-page-item large food">
+
+                        <img
+                            src="images/gallery/gallery4.jpg"
+                            alt="Chinese Rice">
+
+                        <div class="gallery-page-overlay">
+
+                            <h3>Chinese Rice</h3>
+
+                            <span>Signature Dishes</span>
+
+                        </div>
+
+                        <div class="gallery-view-icon">
+
+                            <i class="fa-solid fa-expand"></i>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="gallery-page-item food">
+
+                        <img
+                            src="images/gallery/gallery1.jpg"
+                            alt="Chicken Biryani">
+
+                        <div class="gallery-page-overlay">
+
+                            <h3>Grills </h3>
+
+                            <span>Grills Collection</span>
+
+                        </div>
+
+                        <div class="gallery-view-icon">
+
+                            <i class="fa-solid fa-expand"></i>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="gallery-page-item restaurant">
+
+                        <img
+                            src="images/gallery/gallery9.jpg"
+                            alt="Bistro Bliss Interior">
+
+                        <div class="gallery-page-overlay">
+
+                            <h3>Our Dining Space</h3>
+
+                            <span>Restaurant</span>
+
+                        </div>
+
+                        <div class="gallery-view-icon">
+
+                            <i class="fa-solid fa-expand"></i>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="gallery-page-item drinks">
+
+                        <img
+                            src="images/gallery/gallery6.jpg"
+                            alt="Chapman">
+
+                        <div class="gallery-page-overlay">
+
+                            <h3>Refreshing Drinks</h3>
+
+                            <span>Drinks</span>
+
+                        </div>
+
+                        <div class="gallery-view-icon">
+
+                            <i class="fa-solid fa-expand"></i>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="gallery-page-item kitchen">
+
+                        <img
+                            src="images/gallery/gallery10.jpg"
+                            alt="Bistro Bliss Chef">
+
+                        <div class="gallery-page-overlay">
+
+                            <h3>Our Guests</h3>
+
+                            <span>Behind The Scenes</span>
+
+                        </div>
+
+                        <div class="gallery-view-icon">
+
+                            <i class="fa-solid fa-expand"></i>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        
+        </section>
+
+        <section>
+            <div class="container">
+
+                <div class="gallery-page-header">
+
+                    <span>OUR DINNING SPACE </span>
+
+                    <h2>
+                        A Taste of Bistro Bliss
+                    </h2>
+
+                    <p>
+                        Take a look into our atmosphere, and see how
+                        beautifully we have designed our dinning space to give you the best experience.
+                    </p>
+
+                </div>
+
+
+                <div class="gallery-page-grid">
+
+                    <div class="gallery-page-item large food">
+
+                        <img
+                            src="images/gallery/gallery11.jpg"
+                            alt="Chinese Rice">
+
+                        <div class="gallery-page-overlay">
+
+                            <h3>OUR CEO</h3>
+
+                            <span>CEO</span>
+
+                        </div>
+
+                        <div class="gallery-view-icon">
+
+                            <i class="fa-solid fa-expand"></i>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="gallery-page-item food">
+
+                        <img
+                            src="images/gallery/gallery8.jpg"
+                            alt="Chicken Biryani">
+
+                        <div class="gallery-page-overlay">
+
+                            <h3>Dinning 1 </h3>
+
+                        </div>
+
+                        <div class="gallery-view-icon">
+
+                            <i class="fa-solid fa-expand"></i>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="gallery-page-item restaurant">
+
+                        <img
+                            src="images/gallery/gallery9.jpg"
+                            alt="Bistro Bliss Interior">
+
+                        <div class="gallery-page-overlay">
+
+                            <h3>Our VIP Dining Space</h3>
+
+                            <span>Restaurant</span>
+
+                        </div>
+
+                        <div class="gallery-view-icon">
+
+                            <i class="fa-solid fa-expand"></i>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="gallery-page-item drinks">
+
+                        <img
+                            src="images/gallery/gallery7.jpg"
+                            alt="Chapman">
+
+                        <div class="gallery-page-overlay">
+
+                            <h3>Dining 2</h3>
+
+                        </div>
+
+                        <div class="gallery-view-icon">
+
+                            <i class="fa-solid fa-expand"></i>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="gallery-page-item kitchen">
+
+                        <img
+                            src="images/gallery/gallery10.jpg"
+                            alt="Bistro Bliss Chef">
+
+                        <div class="gallery-page-overlay">
+
+                            <h3>Our Guests</h3>
+
+                            <span>Behind The Scenes</span>
+
+                        </div>
+
+                        <div class="gallery-view-icon">
+
+                            <i class="fa-solid fa-expand"></i>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </section>
+
+        <section class="instagram">
+
+            <div class="container">
+                <span>
+                    FOLLOW US
+                </span>
+
+                <h2>
+                    @BistroBlissRestaurant
+                </h2>
+                <p>
+                    Share your dining experience with us.
+                </p>
+                <a href="#" class="btn btn-primary">
+                    Follow on Instagram
+                </a>
+            </div>
+        </section>
+
+        <!--================ FOOTER ================-->
+
+                    <footer class="footer" id="contact">
+
+                        <div class="container">
+
+                            <div class="footer-grid">
+                                <!-- Logo -->
+                                <div>
+                                    <div class="footer-logo">
+                                    <img src="images/logo.png">
+
+                                <div>
+                                    <h2>Bistro Bliss</h2>
+                                    <span>Restaurant</span>
+                                </div>
+
+                            </div>
+
+                            <p>
+                                Experience Culinary Comfort &
+                                Exceptional Flavor.
+                                Serving unforgettable meals with
+                                passion, elegance and exceptional hospitality.
+                            </p>
+
+                            <div class="social-icons">
+
+                                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                                <a href="#"><i class="fab fa-instagram"></i></a>
+                                <a href="#"><i class="fab fa-x-twitter"></i></a>
+                                <a href="#"><i class="fab fa-whatsapp"></i></a>
+                                
+                            </div>
+
+                        </div>
+
+                        <!-- Links -->
+                        <div>
+
+                            <h3>
+                                Quick Links
+
+                            </h3>
+
+                            <ul class="footer-links">
+
+                                <li><a href="index.html">Home</a></li>
+                                <li><a href="about.html">About</a></li>
+                                <li><a href="menu.html">Menu</a></li>
+                                <li><a href="gallery.html">Gallery</a></li>
+                                <li><a href="contact.html">Contact</a></li>
+
+                            </ul>
+
+                        </div>
+
+                        <!-- Contact -->
+                        <div>
+
+                            <h3>
+                                Contact
+                            </h3>
+
+                            <ul class="footer-contact">
+                                <li>
+                                    <i class="fas fa-phone"></i>
+                                    +234 703 613 1842
+                                </li>
+                                <li>
+                                    <i class="fas fa-envelope"></i>
+                                    bistrobliss007@gmail.com
+                                </li>
+                                <li>
+                                    <i class="fas fa-location-dot"></i>
+                                    Maiduguri, Borno State
+                                </li>
+                            </ul>
+
+                        </div>
+
+                        <!-- Newsletter -->
+
+                        <div>
+
+                            <h3>
+                                Newsletter
+                            </h3>
+                            <p>
+                                Subscribe to receive our latest offers
+                                and exclusive promotions.
+                            </p>
+
+                            <form class="newsletter">
+
+                                <input
+                                type="email"
+                                placeholder="Enter your email">
+
+                                <button>
+                                    <i class="fas fa-paper-plane"></i>
+                                </button>
+
+                            </form>
+
+                        </div>
+
+                        </div>
+
+                        <div class="footer-bottom">
+                            <p>
+                                © 2026 Bistro Bliss Restaurant.
+                                All Rights Reserved.
+                            </p>
+
+                        </div>
+                        </div>
+                    </footer>
+    <script src="js/gallery.js"></script>
+    <script src="js/main.js"></script>
+
+</body>
+</html>
